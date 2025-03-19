@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/My_Website.html/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width" ,="" initial-scale="1&#39;">
+  <title> MY FAVOURITE ANIME </title>
+</head>
+<body style="background-color: rgb(236, 244, 236);">
+    <p>Hello world</p>
+    <a href="http://127.0.0.1:5500/My_Website.html/About%20page.html" <p="">AboutPage<p></p></a>
+    <a href="http://127.0.0.1:5500/My_Website.html/Hashira%20page.html"><p>Hashira Page</p></a>
+    <a href="http://127.0.0.1:5500/My_Website.html/Ranked%20Demons%20Page.html"><p>Ranked Demons Page </p></a>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+  
+
+
+
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top</title>
+    <style>
+        /* Style for the scroll button */
+        #scrollBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none; /* Hidden by default */
+        }
+
+        #scrollBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+
+    <button id="scrollBtn" onclick="scrollToTop()">↑ Top</button>
+
+    <script>
+        // Show button when user scrolls down
+        window.onscroll = function() {
+            let button = document.getElementById("scrollBtn");
+            if (document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Scroll to the top smoothly
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <div style="height: 2000px;">Scroll down to see the button</div>
+
+<!-- Code injected by --></body></html>
